@@ -1,5 +1,5 @@
 {% set name = "dash-mantine-components" %}
-{% set version = "0.10.1" %}
+{% set version = "0.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_mantine_components-{{ version }}.tar.gz
-  sha256: ffbdac64dc1d6c5e6113b4bced902dd38a29f4ce5dbe2380fe6a4c9e3a0b9f1f
+  sha256: 5ec838653b856ae55869b7c661b7d74d2799c1259aa3ebaf57346c6a2f7282ea
 
 build:
   noarch: python
