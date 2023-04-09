@@ -1,11 +1,11 @@
-About dash-mantine-components
-=============================
+About dash-mantine-components-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dash-mantine-components-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/snehilvj/dash-mantine-components
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dash-mantine-components-feedstock/blob/main/LICENSE.txt)
 
 Summary: Custom dash components based on Mantine React Components library
 
