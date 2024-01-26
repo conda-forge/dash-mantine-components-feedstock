@@ -1,5 +1,5 @@
 {% set name = "dash-mantine-components" %}
-{% set version = "0.10.2" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dash_mantine_components-{{ version }}.tar.gz
-  sha256: 5ec838653b856ae55869b7c661b7d74d2799c1259aa3ebaf57346c6a2f7282ea
+  sha256: c3dcbfd89813a1539654b8d016eb953dc5f67aafe1a77d45b5ec9faa6f25d3e7
 
 build:
   noarch: python
@@ -20,18 +20,15 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - dash >=2.0.0
-    - dash-core-components ==2.0.0
-    - dash-html-components ==2.0.0
-    - dash-table ==5.0.0
+    - dash >=2.5.1
 
 test:
   imports:
     - dash_mantine_components
-  commands:
-    - pip check
-  requires:
-    - pip
+    - dash_mantine_components.Card
+    - dash_mantine_components.Image
+    - dash_mantine_components.Center
+    - dash_mantine_components.Tooltip
 
 about:
   home: https://github.com/snehilvj/dash-mantine-components
@@ -39,10 +36,11 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  doc_url: http://dash-mantine-components.herokuapp.com
+  doc_url: https://www.dash-mantine-components.com/
   dev_url: https://github.com/snehilvj/dash-mantine-components
 
 extra:
   recipe-maintainers:
     - ludaavics
     - snehilvj
+    - '0xbe7a'
