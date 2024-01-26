@@ -148,5 +148,6 @@ Feedstock Maintainers
 =====================
 
 * [@0xbe7a](https://github.com/0xbe7a/)
+* [@ludaavics](https://github.com/ludaavics/)
 * [@snehilvj](https://github.com/snehilvj/)
 
