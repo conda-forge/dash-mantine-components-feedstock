@@ -22,6 +22,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - dash >=2.5.1
+  run_constrained:
+    - dash-html-components >=2.0.0
+    - dash-core-components >=2.0.0
+    - dash_table >=5.0.0
 
 test:
   imports:
@@ -31,6 +35,7 @@ test:
     - dash_mantine_components.Center
     - dash_mantine_components.Tooltip
   commands:
+    - conda install -c conda-forge dash-html-components dash-core-components dash-table -y
     - pip check
   requires:
     - python {{ python_min }}
