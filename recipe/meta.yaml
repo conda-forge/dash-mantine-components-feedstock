@@ -1,5 +1,5 @@
 {% set name = "dash-mantine-components" %}
-{% set version = "0.15.1" %}
+{% set version = "0.15.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/dash_mantine_components-{{ version }}.tar.gz
-  sha256: bb24153af09ccc42972af397101ee62718ebe2bbf29fa7ed33c02997059352bd
+  sha256: 28a700aa67240cc8c8c23900912d449a0a636b9cb693a23f8bea23cadde511ef
 
 build:
   noarch: python
@@ -24,14 +24,17 @@ requirements:
     - dash >=2.5.1
 
 test:
-  requires:
-    - python {{ python_min }}
   imports:
     - dash_mantine_components
     - dash_mantine_components.Card
     - dash_mantine_components.Image
     - dash_mantine_components.Center
     - dash_mantine_components.Tooltip
+  commands:
+    - pip check
+  requires:
+    - python {{ python_min }}
+    - pip
 
 about:
   home: https://github.com/snehilvj/dash-mantine-components
