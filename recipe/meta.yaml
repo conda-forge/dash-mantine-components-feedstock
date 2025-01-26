@@ -35,6 +35,8 @@ test:
     - dash_mantine_components.Center
     - dash_mantine_components.Tooltip
   commands:
+    # Resolve using same approach as https://github.com/conda-forge/dash-feedstock/blob/main/recipe/meta.yaml
+    # Refer to https://github.com/conda-forge/dash-feedstock/pull/153#discussion_r1877395296
     - conda install -c conda-forge dash-html-components dash-core-components dash-table -y
     - pip check
   requires:
